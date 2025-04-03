@@ -1,0 +1,62 @@
+# Recipe App Documentation
+
+## Overview
+The Recipe App is a React-based web application for exploring recipes, including popular dishes, vegetarian options, and cuisines. Users can search for recipes and view details like ingredients, preparation steps, and nutritional information.
+
+## Features
+- Browse Recipes: Explore popular and vegetarian recipes, and discover recipes by cuisine.
+- Search Functionality: Search recipes by name or ingredients.
+- Recipe Details: View ingredients, preparation steps, and summaries.
+- Responsive Design: Works seamlessly on various devices.
+- Local Storage: Caches recipes to reduce API calls.
+- Skeleton Loading: Displays loaders during data fetching.
+
+## How It Works
+- Homepage: Displays popular and vegetarian recipes using `Popular` and `Veggie` components.
+- Search: Search recipes via the `Search` component; results appear on the `Searched` page.
+- Cuisine Filter: Filter recipes by cuisine using the `Category` component.
+- Recipe Details: Clicking a recipe card navigates to the `Recipe` page for detailed information.
+- Routing: Uses `react-router-dom` for navigation.
+
+## Setup Instructions
+1. Download the project and navigate to the directory.
+2. Install dependencies: `npm install`.
+3. Set up API key in `src/assets/API_KEY.jsx`.
+4. Run the development server: `npm run dev`.
+5. Build for production: `npm run build`.
+6. Preview the build: `npm run preview`.
+
+## Advantages
+- Fast and responsive with React and Vite.
+- User-friendly interface.
+- Real-time data from Spoonacular API.
+- Local storage reduces API calls.
+- Skeleton loading improves user experience.
+
+## Disadvantages
+- API dependency with rate limits or downtime.
+- Limited offline functionality.
+- API key exposure in the frontend.
+
+## Key Points
+- Technologies: React, Vite, React Router, Material-UI, Styled Components, Framer Motion.
+- Components: `Popular`, `Veggie`, `Search`, `Category`, `RecipeCard`, `Header`.
+- Pages: `Home`, `Cuisine`, `Searched`, `Recipe`.
+- API Integration: Fetches recipes from Spoonacular API.
+- Local Storage: Caches recipes for performance.
+
+## Steps to Use the App
+1. Open the app in a browser.
+2. Browse popular or vegetarian recipes on the homepage.
+3. Use the search bar to find recipes.
+4. Click a cuisine category to explore recipes.
+5. Click a recipe card for detailed information.
+
+## Future Improvements
+- Add authentication for personalized features.
+- Allow users to save favorite recipes.
+- Enable offline access to cached recipes.
+- Improve security by moving the API key to a backend.
+
+## Conclusion
+The Recipe App is a user-friendly platform for discovering recipes with a clean design, responsive layout, and Spoonacular API integration.
